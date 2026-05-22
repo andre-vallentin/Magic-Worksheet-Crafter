@@ -39,7 +39,6 @@ class MarkdownParser:
         for index in range(0, len(segments), 2):
             typeAsString = segments[index].upper()
             type = SegmentType[typeAsString]
-
             match(type):
                 case SegmentType.INFOTEXT:
                     segment = parse_to_information_text(segments[index + 1])    

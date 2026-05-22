@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "magic_worksheet_crafter"
+dynamic = ["version"]
+description = "Generates school worksheets from markdown sources"
+requires-python = ">=3.11"
+dependencies = [
+    "pyyaml",
+    "python-docx",
+]
+
+[tool.hatch.version]
+path = "src/magic_worksheet_crafter/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/magic_worksheet_crafter"]
+include = [
+    "src/magic_worksheet_crafter/assets/**/*.png"]
+
+[project.scripts]
+magic_worksheet_crafter = "magic_worksheet_crafter.main:cli"
+
+[project.gui-scripts]
+worksheet_crafter_app = "magic_worksheet_crafter.gui:launch"
+
+[tool.pyright]
+extraPaths = ["src"]

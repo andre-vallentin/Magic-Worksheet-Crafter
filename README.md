@@ -108,5 +108,5 @@ python3.13 build_app/setup.py py2app
 A temporary `build`-folder is been deleted after the creation of the application in the `dist`-folder.
 
 # <a name="assets"></a> Project-Assets
-The Icons are made by ThoseIcons from www.flaticon.com"
+The Icons are made by ThoseIcons from www.flaticon.com
 https://www.flaticon.com/authors/those-icons

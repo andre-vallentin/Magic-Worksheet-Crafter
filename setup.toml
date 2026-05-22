@@ -1,0 +1,12 @@
+[colors]
+primary   = "#FF6F4A"
+secondary = "#01A976"
+
+[logo]
+path = "logo.png"
+
+[icons]
+exercise      = "exercise.png"
+table         = "table.png"
+single_choice = "tick_task.png"
+information   = "information.png"

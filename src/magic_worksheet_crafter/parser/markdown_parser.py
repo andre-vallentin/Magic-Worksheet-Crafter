@@ -37,8 +37,10 @@ class MarkdownParser:
         segments = [s.strip() for s in segments if s.strip()]  # Remove empty sections and trim whitespace
 
         for index in range(0, len(segments), 2):
+
+            segment = None
             typeAsString = segments[index].upper()
-            type = SegmentType[typeAsString]
+            type = SegmentType[typeAsString]            
             match(type):
                 case SegmentType.INFOTEXT:
                     segment = parse_to_information_text(segments[index + 1])    

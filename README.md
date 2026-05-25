@@ -108,5 +108,9 @@ python3.13 build_app/setup.py py2app
 A temporary `build`-folder is been deleted after the creation of the application in the `dist`-folder.
 
 # <a name="assets"></a> Project-Assets
+
+The application logo has been designed from [Gondola](https://www.canva.com/p/gondola-1990/?utm_medium=referral&utm_source=creator_share&utm_campaign=creator_share)
+and has been paid for 1€ at the 25.05.2026 by myself.
+
 The Icons are made by ThoseIcons from www.flaticon.com
 https://www.flaticon.com/authors/those-icons

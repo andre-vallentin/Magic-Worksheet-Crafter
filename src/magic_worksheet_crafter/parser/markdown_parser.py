@@ -8,7 +8,7 @@ from .modules.text_task_parser import parse_to_text_task
 from .modules.info_text_parser import parse_to_information_text
 from .modules.table_task_parser import parse_table_task
 from .modules.single_choice_parser import parse_single_choice
-from .modules.source_text_parser import parse_to_source_text
+from .modules.reference_list_parser import parse_to_reference_list
 
 class MarkdownParser:
     def __init__(self, markdown_text):
@@ -51,7 +51,7 @@ class MarkdownParser:
                 case SegmentType.SINGLECHOICE:
                     segment = parse_single_choice(segments[index + 1])
                 case SegmentType.SOURCES:
-                    segment = parse_to_source_text(segments[index + 1])
+                    segment = parse_to_reference_list(segments[index + 1])
                 case _:
                     pass
             list_of_segments.append(segment)

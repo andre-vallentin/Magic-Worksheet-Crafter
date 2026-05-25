@@ -3,7 +3,7 @@ from docx.oxml import OxmlElement
 from docx.shared import Cm, Pt
 
 from .shared.table_column_width import set_column_width
-from .shared.markdown_handler import build_formatted_paragraph
+from .shared.markdown_formatter import build_formatted_paragraph
 from .shared.segment import Segment
 
 class TextTask(Segment):

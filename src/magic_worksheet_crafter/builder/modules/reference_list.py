@@ -1,7 +1,7 @@
 from .shared.segment import Segment
-from .shared.markdown_handler import build_formatted_paragraph
+from .shared.markdown_formatter import build_formatted_paragraph
 
-class SourceText(Segment):
+class ReferenceList(Segment):
 
     def __init__(self, content):        
 

@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug GUI App",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/build_app/app_entry.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "justMyCode": true,
+      "env": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "name": "Debug with Module Import",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "magic_worksheet_crafter.gui",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

@@ -2,6 +2,7 @@ import sys
 import os
 import shutil
 import atexit
+from typing import Any
 
 _here = os.path.dirname(os.path.abspath(__file__))
 _root = os.path.join(_here, "..")
@@ -17,30 +18,31 @@ def _cleanup_build():
 
 atexit.register(_cleanup_build)
 
+_py2app_opts: dict[str, Any] = {
+    "packages": ["magic_worksheet_crafter", "docx", "yaml"],
+    "includes": ["tkinter", "tomllib"],
+    "resources": [os.path.join(_root, "src", "magic_worksheet_crafter", "assets")],
+    "iconfile": os.path.join(_here, "magic_worksheet_crafter.icns"),
+    "plist": {
+        "CFBundleName": "Magic Worksheet Crafter",
+        "CFBundleDisplayName": "Magic Worksheet Crafter",
+        "CFBundleIdentifier": "de.vallentin.worksheetcrafter",
+        "CFBundleVersion": "1.0.0",
+        "CFBundleShortVersionString": "1.0",
+        "NSHumanReadableCopyright": "Herr Vallentin",
+        "LSMinimumSystemVersion": "12.0",
+    },
+}
+
 class _Dist(Distribution):
-    def parse_config_files(self):
-        super().parse_config_files()
+    def parse_config_files(self, filenames=None, ignore_option_errors=False):
+        super().parse_config_files(filenames=filenames, ignore_option_errors=ignore_option_errors)
         # py2app rejects non-empty install_requires; pyproject.toml auto-sets it
         # Clear it here after config is parsed but before commands run
         self.install_requires = []
 
-setup(
+setup(  # type: ignore[arg-type]
     distclass=_Dist,
     app=["build_app/app_entry.py"],
-    options={
-        "py2app": {
-            "packages": ["magic_worksheet_crafter", "docx", "yaml"],
-            "includes": ["tkinter", "tomllib"],
-            "resources": [os.path.join(_root, "src", "magic_worksheet_crafter", "assets")],
-            "plist": {
-                "CFBundleName": "Magic Worksheet Crafter",
-                "CFBundleDisplayName": "Magic Worksheet Crafter",
-                "CFBundleIdentifier": "de.vallentin.worksheetcrafter",
-                "CFBundleVersion": "1.0.0",
-                "CFBundleShortVersionString": "1.0",
-                "NSHumanReadableCopyright": "Herr Vallentin",
-                "LSMinimumSystemVersion": "12.0",
-            },
-        }
-    },
+    options={"py2app": _py2app_opts},
 )

@@ -4,11 +4,11 @@ from ...builder.modules.text_task import TextTask
 from ...builder.modules.task_exercise import TaskExercise
 
 def parse_to_text_task(text):
-    lines = text.splitlines()   # Alle Zeilen 
+    lines = text.splitlines()  
     lines = [s.strip() for s in lines if s.strip()]  
 
-    title = re.sub(r'^#+\s', '', lines[0]) # Thema 
-    description = lines[1] #  Aufgabenbeschreibung
+    title = re.sub(r'^#+\s', '', lines[0]) # Topic 
+    description = lines[1] #  Task description
     taskExercises = []
 
     ## Find index of answer markers and split the text accordingly
@@ -16,9 +16,9 @@ def parse_to_text_task(text):
 
     for(_, matchIndex) in enumerate(matchIndices):
 
-        taskdescription = lines[matchIndex - 1] if matchIndex > 0 else '' # Aufgabenbeschreibung
-        answerLines = _get_answer_lines(lines[matchIndex]) # Anzahl der Antwortzeilen (optional) 
-        answerText = _get_answer(lines, matchIndex) # Lösungstext (optional)
+        taskdescription = lines[matchIndex - 1] if matchIndex > 0 else '' # Task description
+        answerLines = _get_answer_lines(lines[matchIndex]) # Number of answer lines (optional) 
+        answerText = _get_answer(lines, matchIndex) # Answer text (optional)
 
         taskExercises.append(TaskExercise(description=taskdescription, answerLines=answerLines, answerText=answerText ))
     

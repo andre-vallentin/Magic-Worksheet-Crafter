@@ -20,8 +20,9 @@ class DocumentBuilder:
 
     def build(self, sections):
         self._setup_margins()
+
         style = self.doc.styles['Normal']
-        style.font.name = 'Calibri'
+#        style.font.name = 'Calibri'
 
         sections['frontmatter'].define_colors(self.colors)
         sections['frontmatter'].define_logo(self.logo_path)

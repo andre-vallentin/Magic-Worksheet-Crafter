@@ -34,7 +34,7 @@ dem Standardformat ergänzt.
 - `references/text-task-example.md`
 - `references/single-choice-example.md`
 - `references/table-task-example.md`
-- `references/sources-example.md`
+- `references/references-example.md`
 
 Kopiere die exakte Struktur, Formatierung und HTML-Kommentare aus diesen Dateien.
 
@@ -129,7 +129,7 @@ Jeder Abschnitt MUSS mit dem HTML-Kommentar aus den References beginnen:
 
 Beispiele:
 - Antwortzeilen: `_Antwortzeilen:_ 4` (nicht `_Antwortzeilen: 4_`)
-- Sources-Format: `[Quelle] Beschreibung → Aufgabe(n): #`
+- Referenz-Format: `[Quelle] Beschreibung → Aufgabe(n): #`
 - InfoText: Fettdruck für Fachbegriffe, Absätze wie in Referenz
 
 ## [Ausgabe und nächste Schritte]
@@ -137,8 +137,6 @@ Beispiele:
 - Informiere den Benutzer dass die Markdown mit vollständigen Metadaten erstellt wurde
 - Zeige die Metadaten-Zusammenfassung (title, class, unit)
 - öffne die Markdown-Datei in einem neuen Tab
-- Frage ihn ob er möchte das eine Docx erstellt wird mit "Möchtest du jetzt ein Arbeitsblatt im DOCX-Format erstellen?" (Ja/Nein)
-- Wenn Ja: führe den Befehl: `python3 magic-worksheet-crafter/main.py [Pfad zur Markdown-Datei] [Pfad zur Ausgabe-DOCX-Datei]` aus und informiere ihn, dass die DOCX-Datei erstellt wird und wo er sie findet
 
 
 

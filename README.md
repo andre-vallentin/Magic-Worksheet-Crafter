@@ -89,7 +89,6 @@ magic_worksheet_crafter source_markdown_path output_docx_path
 ### GUI 
 Go to the parent folder and execute: `python3 build_app/app_entry.py` to start the GUI straight from the script.
 
-
 # <a name="build-app"></a> Build the app for macOS
 
 To build the application as a standalone program, execute the following commands from the 

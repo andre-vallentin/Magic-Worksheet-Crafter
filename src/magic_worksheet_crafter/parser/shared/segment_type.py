@@ -7,4 +7,4 @@ class SegmentType(Enum):
     TEXTTASK = 3
     SINGLECHOICE = 4
     TABLETASK = 5
-    SOURCES = 6
+    REFERENCES = 6

@@ -37,9 +37,9 @@ class DocumentBuilder:
             self._inject_icon_paths(sections['solutions'])
             self._build_segments(sections['solutions'])
 
-        if sections.get('sources') is not None:
+        if sections.get('references') is not None:
             self.doc.add_heading('QUELLEN', level=2)
-            self._build_segments(sections['sources'])
+            self._build_segments(sections['references'])
 
     def save(self):
         self.doc.save(self.output_path)

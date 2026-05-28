@@ -29,7 +29,7 @@ _py2app_opts: dict[str, Any] = {
         "CFBundleIdentifier": "de.vallentin.worksheetcrafter",
         "CFBundleVersion": "1.0.0",
         "CFBundleShortVersionString": "1.0",
-        "NSHumanReadableCopyright": "Herr Vallentin",
+        "NSHumanReadableCopyright": "André Vallentin",
         "LSMinimumSystemVersion": "12.0",
     },
 }

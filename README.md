@@ -1,17 +1,17 @@
 # <a name="about"></a>Magic Worksheet Crafter
 
-This programm is an assistant to transform a Markdown to a Docx file to create worksheets for school. 
+This program is an assistant that transforms Markdown into a DOCX file to create worksheets for school.
 
 # Content
 
 - [About](#about)
 - [Pre-Requisites](#pre-requisites)
 - [How to use](#how-to-use)
-- [Build the app](#build-the-app)
+- [Build the app for macOS](#build-the-app)
 
 # <a name="about"></a>About
 
-The main intended usage of this application is to use it as a worksheet creater for schools with given pre-defined styles of exercises. 
+The main intended usage of this application is to use it as a worksheet creator for schools with given pre-defined styles of exercises. 
 
 The provided excersices are:
 - information texts
@@ -90,8 +90,7 @@ magic_worksheet_crafter source_markdown_path output_docx_path
 Go to the parent folder and execute: `python3 build_app/app_entry.py` to start the GUI straight from the script.
 
 
-# <a name="build-app"></a> Build the app
-
+# <a name="build-app"></a> Build the app for macOS
 
 To build the application as a standalone program, execute the following commands from the 
 `magic_worksheet_crafter` folder:

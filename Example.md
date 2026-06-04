@@ -1,7 +1,7 @@
 ---
 title: Muskeln
 gradeOfSchool: 6
-teacher: Herr Vallentin
+teacher: Herr Mustermann
 unit: Körper und Gesundheit
 study: Naturwissenschaften
 ---
@@ -111,7 +111,7 @@ Der Beuger zieht den Arm nach oben und spannt sich an. Der Strecker drückt den 
 
 <!-- Section -->
 
-<!-- Sources -->
+<!-- References -->
 ## Quellen
 
 [Klett-Naturwissenschaften-5+6_Berlin_Brandenburg.pdf] S. 256 → Aufgaben: 1, 2, 3, 4

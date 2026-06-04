@@ -23,11 +23,11 @@ class MarkdownParser:
         solutions = None
         if(len(sections) > 2):
             solutions = self._create_segments(sections[2])
-        sources = None
+        reference_list = None
         if(len(sections) > 3):
-            sources = self._create_segments(sections[3])
+            reference_list = self._create_segments(sections[3])
 
-        return {'frontmatter': frontmatter, 'exercises': exercises, 'solutions': solutions, 'sources': sources}
+        return {'frontmatter': frontmatter, 'exercises': exercises, 'solutions': solutions, 'references': reference_list}
 
     def _create_segments(self, section):
 
@@ -50,7 +50,7 @@ class MarkdownParser:
                     segment = parse_table_task(segments[index + 1])
                 case SegmentType.SINGLECHOICE:
                     segment = parse_single_choice(segments[index + 1])
-                case SegmentType.SOURCES:
+                case SegmentType.REFERENCES:
                     segment = parse_to_reference_list(segments[index + 1])
                 case _:
                     pass

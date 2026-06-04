@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(./worksheets/**)",
+      "Write(./worksheets/**)",
+      "Edit(./worksheets/**)",
+      "Delete(./worksheets/**)",
+      "Bash(python*)",
+      "Bash(python3*)"
+    ],
+    "deny": [
+      "Write",
+      "Edit",
+      "Delete"
+    ]
+  }
+}

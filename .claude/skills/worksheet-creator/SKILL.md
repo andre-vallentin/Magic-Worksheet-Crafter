@@ -40,7 +40,7 @@ Kopiere die exakte Struktur, Formatierung und HTML-Kommentare aus diesen Dateien
 
 ## [Markdown-Erstellung]
 
-Beziehe dich nur auf die ausgewählten Quellen und generiere eine strukturierte Markdown-Datei mit folgenden Anforderungen, beziehe keine anderen Dateien oder Informationen mit ein.
+Beziehe dich nur auf die ausgewählten Quellen und generiere eine strukturierte Markdown-Datei mit folgenden Anforderungen, beziehe keine anderen Dateien oder Informationen mit ein. 
 
 ## [Mehrere Quellen] [PFLICHT]
 

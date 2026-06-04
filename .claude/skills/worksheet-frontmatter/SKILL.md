@@ -61,9 +61,40 @@ Falls eine dieser Informationen fehlt oder unklar ist, breche ab und fordere sie
 - Zeige die gefundenen Quellen als nummerierte Liste an und biete noch "Andere/freie Quellenangabe" als Option an
 
 ### Schritt 6: [Quelleneingrenzung] [Usage: sonnet] 
-- **Frage:** Auf welche Seiten oder Begriffe soll ich mich beziehen?
+"Bitte gib für jede ausgewählte Quelle die Seitenzahlen im Format S. XX–YY an."
+
+Beispiel:
+
+Cornelsen Natur_und_Technik: S. XX–YY
+Klett Naturwissenschaften: S. XX–YY
+
+Verboten:
+
+Kapitelangaben akzeptieren
+Themenangaben akzeptieren
+Schlüsselbegriffe akzeptieren
+"alle relevanten Inhalte" akzeptieren
+Alternativen anbieten
+Zusatzfragen stellen
+Auswahlmöglichkeiten auflisten
+
+Wenn der Benutzer keine Seitenzahlen angibt:
+
+Antworte ausschließlich mit:
+
+"Ich brauche Seitenzahlen im Format S. XX–YY."
+
+Wenn der Benutzer Kapitel, Themen, Begriffe oder "alle relevanten Inhalte" angibt:
+
+Antworte ausschließlich mit:
+
+"Ich brauche Seitenzahlen im Format S. XX–YY."
+
+Erst fortfahren, wenn für jede ausgewählte Quelle Seitenzahlen vorliegen.
+
+
 - Verwende dann zur Erstellung nur die vom Benutzer ausgewählten Quellen.
-- Sollte eine Quelle keinen passenden Inhalt, informiere den Benutzer und frage, ob er eine andere Quelle auswählen möchte.
+- Sollte eine Quelle keinen passenden Inhalt bereitstellen, informiere den Benutzer und frage, ob er eine andere Quelle auswählen möchte.
 
 ### Schritt 7: [Markdownerstellung]
 Sobald alle Metadaten (Schulfach, Reihe, Klassenstufe, Titel, Quellen) vollständig gesammelt wurden:

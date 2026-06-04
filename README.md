@@ -27,6 +27,8 @@ It also includes a pre-defined header and footer with a fixed style.
 ## Creation
 To create a worksheet you can use a pre-defined Claude skillset where you can chat with the LLM to request the creation of a worksheet. It will create a Markdown file which handles the formatting for the conversion later.
 
+![til](./assets/claude-worksheet.gif)
+
 ## Conversion
 
 To convert a Markdown to a Microsoft-Word (.docx) file you can use this application which will create a usefull and consistend worksheet.

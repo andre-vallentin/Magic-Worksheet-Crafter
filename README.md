@@ -1,6 +1,9 @@
 # <a name="about"></a>Magic Worksheet Crafter
 
 This program is an assistant that transforms Markdown into a DOCX file to create worksheets for school.
+You can build it as a standalone app or of course start it from terminal with a GUI or use the functionality directly.
+
+It also contains additional a Claude skill set which can be used to create these Markdown-files easily.
 
 # Content
 
@@ -20,6 +23,13 @@ The provided excersices are:
 - text excersise
 
 It also includes a pre-defined header and footer with a fixed style.
+
+## Creation
+To create a worksheet you can use a pre-defined Claude skillset where you can chat with the LLM to request the creation of a worksheet. It will create a Markdown file which handles the formatting for the conversion later.
+
+## Conversion
+
+To convert a Markdown to a Microsoft-Word (.docx) file you can use this application which will create a usefull and consistend worksheet.
 
 # <a name="prerequisites"></a>Prerequisites
 
@@ -88,7 +98,6 @@ magic_worksheet_crafter source_markdown_path output_docx_path
 ```
 ### GUI 
 Go to the parent folder and execute: `python3 build_app/app_entry.py` to start the GUI straight from the script.
-
 
 # <a name="build-app"></a> Build the app for macOS
 

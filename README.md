@@ -25,22 +25,23 @@ The provided excersices are:
 It also includes a pre-defined header and footer with a fixed style.
 
 Pre-defined Markdown file:
-![til](./assets/markdown-preview.mp4)
+
+https://github.com/user-attachments/assets/cd5cf50c-18d5-43a6-9b09-d0f9d8b03403
 
 Docx-file after conversion:
 
-
+https://github.com/user-attachments/assets/a8921c88-916c-4eba-b2e8-c2c5fdb48843
 
 ## Creation
 To create a worksheet you can use a pre-defined Claude skillset where you can chat with the LLM to request the creation of a worksheet. It will create a Markdown file which handles the formatting for the conversion later.
 
-![til](./assets/claude-worksheet.gif)
+https://github.com/user-attachments/assets/c217fee6-4ba9-41e1-8d04-2777ba7f61eb
 
 ## Conversion
 
 To convert a Markdown to a Microsoft-Word (.docx) file you can use this application which will create a usefull and consistend worksheet.
 
-![til](./assets/convert.gif)
+https://github.com/user-attachments/assets/7b6e1bd5-e684-44a1-8ac5-96b465af4992
 
 # <a name="prerequisites"></a>Prerequisites
 

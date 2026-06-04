@@ -1,7 +1,7 @@
 ---
 title: Muskeln
 gradeOfSchool: 6
-teacher: Herr Vallentin
+teacher: Herr Mustermann
 unit: Körper und Gesundheit
 study: Naturwissenschaften
 ---

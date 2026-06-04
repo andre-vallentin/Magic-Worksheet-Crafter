@@ -25,7 +25,7 @@ The provided excersices are:
 It also includes a pre-defined header and footer with a fixed style.
 
 Pre-defined Markdown file:
-![til](./assets/markdown-preview.webm)
+![til](./assets/markdown-preview.mp4)
 
 Docx-file after conversion:
 

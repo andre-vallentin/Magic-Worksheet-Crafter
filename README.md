@@ -1,9 +1,9 @@
 # <a name="about"></a>Magic Worksheet Crafter
 
-This program is an assistant that transforms Markdown into a DOCX file to create worksheets for school.
-You can build it as a standalone app or of course start it from terminal with a GUI or use the functionality directly.
+This program is a tool that transforms specific Markdown files into a DOCX worksheets for school.
+You can use it from the terminal, start a GUI or build it as a standalone app.
 
-It also contains additional a Claude skill set which can be used to create these Markdown-files easily.
+It also contains a self build Claude SKILL-set which helps you build the Markdown-worksheets. You will need a Claude Code subscription to use it sucessfully and some way to chat with Claude Code, maybe Visual Studio Code (it's free).
 
 # Content
 

@@ -22,7 +22,7 @@ _py2app_opts: dict[str, Any] = {
     "packages": ["magic_worksheet_crafter", "docx", "yaml"],
     "includes": ["tkinter", "tomllib"],
     "resources": [os.path.join(_root, "src", "magic_worksheet_crafter", "assets")],
-    "iconfile": os.path.join(_here, "magic_worksheet_crafter.icns"),
+    #"iconfile": os.path.join(_here, "magic_worksheet_crafter.icns"),
     "plist": {
         "CFBundleName": "Magic Worksheet Crafter",
         "CFBundleDisplayName": "Magic Worksheet Crafter",
